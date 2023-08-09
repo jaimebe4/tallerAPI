@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PoSUu5U2jMWVGXqcpb9vF+J1sgB7pl0/xGdVKNGR7MMnWQAFaAaszsmDd6tMZoun7wsMKOv/fPgL2F+ZnA2cIQ==",
+  "dgSpecHash": "0dFyST220XelAJhQbeiwqzylTb36oZCYy93a5mlNPIQBmnIDGn0Mwl0EDtnMhsr1pPViGARVhBCPuDoHEGCJaw==",
   "success": true,
-  "projectFilePath": "C:\\DESARROLLO\\CURSO_XAMARIN\\capacitacionmobile\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
+  "projectFilePath": "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jbetancur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jbetancur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\DESARROLLO\\CURSO_XAMARIN\\capacitacionmobile\\tallerAPI\\tallerAPI\\tallerAPI.csproj": {}
+    "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\tallerAPI.csproj": {}
   },
   "projects": {
-    "C:\\DESARROLLO\\CURSO_XAMARIN\\capacitacionmobile\\tallerAPI\\tallerAPI\\tallerAPI.csproj": {
+    "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\tallerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\DESARROLLO\\CURSO_XAMARIN\\capacitacionmobile\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
+        "projectUniqueName": "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
         "projectName": "tallerAPI",
-        "projectPath": "C:\\DESARROLLO\\CURSO_XAMARIN\\capacitacionmobile\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
+        "projectPath": "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
         "packagesPath": "C:\\Users\\jbetancur\\.nuget\\packages\\",
-        "outputPath": "C:\\DESARROLLO\\CURSO_XAMARIN\\capacitacionmobile\\tallerAPI\\tallerAPI\\obj\\",
+        "outputPath": "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -29,7 +29,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

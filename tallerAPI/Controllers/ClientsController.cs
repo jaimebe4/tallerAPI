@@ -7,11 +7,11 @@ namespace tallerAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClientesController : ControllerBase
+    public class ClientsController : ControllerBase
     {
         private readonly tallerDBContext _context;
 
-        public ClientesController(tallerDBContext context)
+        public ClientsController(tallerDBContext context)
         {
             _context = context;
         }
