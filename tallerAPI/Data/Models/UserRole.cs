@@ -1,14 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using tallerAPI.Data.Enumerations;
 
 namespace tallerAPI.Data.Models
 {
-    public class Cliente
+    public class UserRole
     {
+
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
+        public long RoleId { get; set; }
+
         [Required]
         public string Name { get; set; }
-        public string Dna { get; set; }
+
+        public RoleType Type { get; set; }
     }
 }

@@ -265,6 +265,13 @@ C:\DESARROLLO\CURSO_XAMARIN\capacitacionmobile\tallerAPI\tallerAPI\obj\Debug\net
 C:\DESARROLLO\CURSO_XAMARIN\capacitacionmobile\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.pdb
 C:\DESARROLLO\CURSO_XAMARIN\capacitacionmobile\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.genruntimeconfig.cache
 C:\DESARROLLO\CURSO_XAMARIN\capacitacionmobile\tallerAPI\tallerAPI\obj\Debug\net6.0\ref\tallerAPI.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.csproj.AssemblyReference.cache
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.AssemblyInfoInputs.cache
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.AssemblyInfo.cs
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.csproj.CoreCompileInputs.cache
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\appsettings.Development.json
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\appsettings.json
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\tallerAPI.exe
@@ -511,13 +518,6 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\runtimes\win\li
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.csproj.AssemblyReference.cache
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.AssemblyInfoInputs.cache
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.AssemblyInfo.cs
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.csproj.CoreCompileInputs.cache
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\staticwebassets\msbuild.tallerAPI.Microsoft.AspNetCore.StaticWebAssets.props
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\staticwebassets\msbuild.build.tallerAPI.props
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.tallerAPI.props
@@ -532,3 +532,4 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\refint\tallerAP
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.pdb
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.genruntimeconfig.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\ref\tallerAPI.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

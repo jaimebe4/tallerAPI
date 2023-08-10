@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0dFyST220XelAJhQbeiwqzylTb36oZCYy93a5mlNPIQBmnIDGn0Mwl0EDtnMhsr1pPViGARVhBCPuDoHEGCJaw==",
+  "dgSpecHash": "Pp+J37zNfauP0HieDAp4wDVevp13bH4ct+nGzyi7LxR0+/f3xeVkKb82xzjdV9QCBY/ba+dYTx5TgKxqdPdVNg==",
   "success": true,
   "projectFilePath": "C:\\DESARROLLO\\CURSO_XAMARIN\\tallerAPI\\tallerAPI\\tallerAPI.csproj",
   "expectedPackageFiles": [
@@ -59,6 +59,7 @@
     "C:\\Users\\jbetancur\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\jbetancur\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\jbetancur\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\jbetancur\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.20\\microsoft.aspnetcore.authentication.jwtbearer.6.0.20.nupkg.sha512",
     "C:\\Users\\jbetancur\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\jbetancur\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\jbetancur\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
