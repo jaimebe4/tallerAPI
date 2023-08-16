@@ -10,5 +10,6 @@ namespace tallerAPI.Data.Models
         [Required]
         public string Name { get; set; }
         public string Dna { get; set; }
+
     }
 }

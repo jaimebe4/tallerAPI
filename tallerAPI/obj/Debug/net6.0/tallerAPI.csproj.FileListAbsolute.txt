@@ -533,3 +533,5 @@ C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.pdb
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.genruntimeconfig.cache
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\ref\tallerAPI.dll
 C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.RazorAssemblyInfo.cache
+C:\DESARROLLO\CURSO_XAMARIN\tallerAPI\tallerAPI\obj\Debug\net6.0\tallerAPI.RazorAssemblyInfo.cs

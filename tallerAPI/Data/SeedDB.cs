@@ -42,6 +42,13 @@ namespace tallerAPI.Data
                 await this.context.SaveChangesAsync();
             }
 
+            if (!this.context.Vehicles.Any())
+            {
+                this.AddVehicle("Automovil", "Stepway", "Renault", 2021, "JSR922");
+                this.AddVehicle("Motocicleta", "Vstrom 650", "Suzuki", 2013, "WBX77C");
+                await this.context.SaveChangesAsync();
+            }
+
         }
 
         private void AddClient(string name)
@@ -68,6 +75,18 @@ namespace tallerAPI.Data
                 UserName = userId,
                 Password = password,
                 RoleId = userRoleId
+            });
+        }
+
+        private void AddVehicle(string vehicleType, string vehicleName, string vehicleBrand, int vehicleModel, string vehiclePlaque)
+        {
+            this.context.Vehicles.Add(new Models.Vehicle
+            {
+                VehicleType = vehicleType,
+                VehicleName = vehicleName,
+                VehicleBrand = vehicleBrand,
+                VehicleModel = vehicleModel,
+                VehiclePlaque = vehiclePlaque
             });
         }
 
