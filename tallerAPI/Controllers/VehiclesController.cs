@@ -1,163 +1,84 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using tallerAPI.Data.Models;
+using tallerAPI.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using tallerAPI.Data;
-using tallerAPI.Data.Models;
 
 namespace tallerAPI.Controllers
 {
-    public class VehiclesController : Controller
+    [Authorize]
+    [Route("api/[controller]")]
+    [ApiController]
+    public class VehiclesController : ControllerBase
     {
-        private readonly tallerDBContext _context;
+        private readonly IVehicleService _vehicleService;
 
-        public VehiclesController(tallerDBContext context)
+        public VehiclesController(IVehicleService vehicleService)
         {
-            _context = context;
+            _vehicleService = vehicleService;
         }
 
-        // GET: Vehicles
-        public async Task<IActionResult> Index()
-        {
-              return _context.Vehicle != null ? 
-                          View(await _context.Vehicle.ToListAsync()) :
-                          Problem("Entity set 'tallerDBContext.Vehicle'  is null.");
-        }
 
-        // GET: Vehicles/Details/5
-        public async Task<IActionResult> Details(long? id)
-        {
-            if (id == null || _context.Vehicle == null)
-            {
-                return NotFound();
-            }
-
-            var vehicle = await _context.Vehicle
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (vehicle == null)
-            {
-                return NotFound();
-            }
-
-            return View(vehicle);
-        }
-
-        // GET: Vehicles/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Vehicles/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,VehicleType,VehicleName,VehicleBrand,VehicleModel,VehiclePlaque")] Vehicle vehicle)
+        [Route("PostObtenerVehiculos")]
+        public async Task<ActionResult<IEnumerable<Vehicle>>> PostObtenerVehiculos()
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(vehicle);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(vehicle);
-        }
 
-        // GET: Vehicles/Edit/5
-        public async Task<IActionResult> Edit(long? id)
-        {
-            if (id == null || _context.Vehicle == null)
+            var vehiculo = await _vehicleService.PostObtenerVehiculosAsync();
+
+            if (vehiculo == null)
             {
                 return NotFound();
             }
+            /*
+            var token = _accountService.GenerateJwtToken(user);
 
-            var vehicle = await _context.Vehicle.FindAsync(id);
-            if (vehicle == null)
+            var userDto = new UserDto
             {
-                return NotFound();
-            }
-            return View(vehicle);
+                UserName = user.UserName,
+                Role = user.Role,
+                Token = token
+            };*/
+
+            return Ok(vehiculo);
         }
 
-        // POST: Vehicles/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,VehicleType,VehicleName,VehicleBrand,VehicleModel,VehiclePlaque")] Vehicle vehicle)
+        [Route("PostCrearVehiculo")]
+        public async Task<ActionResult> PostCrearVehiculo(Vehicle vehicle)
         {
-            if (id != vehicle.Id)
-            {
-                return NotFound();
-            }
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(vehicle);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!VehicleExists(vehicle.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(vehicle);
-        }
-
-        // GET: Vehicles/Delete/5
-        public async Task<IActionResult> Delete(long? id)
-        {
-            if (id == null || _context.Vehicle == null)
-            {
-                return NotFound();
-            }
-
-            var vehicle = await _context.Vehicle
-                .FirstOrDefaultAsync(m => m.Id == id);
             if (vehicle == null)
             {
-                return NotFound();
+                return Problem("Entity set 'tallerDBContext.vehicle'  is null.");
             }
 
-            return View(vehicle);
-        }
+            var _vehicle = await _vehicleService.PostCrearVehiculoAsync(vehicle);
 
-        // POST: Vehicles/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(long id)
-        {
-            if (_context.Vehicle == null)
+            if (_vehicle == null)
             {
-                return Problem("Entity set 'tallerDBContext.Vehicle'  is null.");
+                return Problem("Error creando nuevo vehiculo");
             }
-            var vehicle = await _context.Vehicle.FindAsync(id);
-            if (vehicle != null)
+
+            /*
+            var userDto = new UserDto
             {
-                _context.Vehicle.Remove(vehicle);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+                UserName = user.UserName,
+                Role = user.Role,
+                Token = token
+            };*/
+
+            return Ok();
         }
 
-        private bool VehicleExists(long id)
-        {
-          return (_context.Vehicle?.Any(e => e.Id == id)).GetValueOrDefault();
-        }
+
+
+
+
+
+
+
+
+
     }
 }

@@ -3,7 +3,6 @@ using Microsoft.Extensions.DependencyInjection;
 using tallerAPI.Data;
 using tallerAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -21,6 +20,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<SeedDb>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IVehicleService, VehicleService>();
 
 builder.Services.AddSwaggerGen(option =>
 {
