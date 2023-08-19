@@ -45,7 +45,7 @@ namespace tallerAPI.Services
                 return null;
             }
             //var GastosFijos = await _context.GastosFijos.Include(u => u.User).ToListAsync();
-            var vehiculos = await _context.Vehicles.Include(u => u.Id).ToListAsync();
+            var vehiculos = await _context.Vehicles.ToListAsync();
 
             return vehiculos;
         }

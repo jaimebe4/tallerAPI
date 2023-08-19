@@ -30,15 +30,6 @@ namespace tallerAPI.Controllers
             {
                 return NotFound();
             }
-            /*
-            var token = _accountService.GenerateJwtToken(user);
-
-            var userDto = new UserDto
-            {
-                UserName = user.UserName,
-                Role = user.Role,
-                Token = token
-            };*/
 
             return Ok(vehiculo);
         }
@@ -59,14 +50,6 @@ namespace tallerAPI.Controllers
             {
                 return Problem("Error creando nuevo vehiculo");
             }
-
-            /*
-            var userDto = new UserDto
-            {
-                UserName = user.UserName,
-                Role = user.Role,
-                Token = token
-            };*/
 
             return Ok();
         }
