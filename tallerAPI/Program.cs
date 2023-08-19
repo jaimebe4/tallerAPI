@@ -21,6 +21,7 @@ builder.Services.AddScoped<SeedDb>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
 builder.Services.AddScoped<IVehicleService, VehicleService>();
+builder.Services.AddScoped<IStorieService, StorieService>();
 
 builder.Services.AddSwaggerGen(option =>
 {

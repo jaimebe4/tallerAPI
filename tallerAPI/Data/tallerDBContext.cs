@@ -18,6 +18,7 @@ namespace tallerAPI.Data
         public DbSet<tallerAPI.Data.Models.UserRole> UserRoles { get; set; }
         public DbSet<tallerAPI.Data.Models.User> Users { get; set; }
         public DbSet<tallerAPI.Data.Models.Vehicle> Vehicles { get; set; }
+        public DbSet<tallerAPI.Data.Models.Storie> Stories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

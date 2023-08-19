@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using tallerAPI.Data;
 
@@ -11,9 +12,11 @@ using tallerAPI.Data;
 namespace tallerAPI.Migrations
 {
     [DbContext(typeof(tallerDBContext))]
-    partial class tallerDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230819035645_addStories2")]
+    partial class addStories2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -51,6 +54,9 @@ namespace tallerAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("IdStorie"));
 
+                    b.Property<long>("IdVehicle")
+                        .HasColumnType("bigint");
+
                     b.Property<DateTime>("StorieDate")
                         .HasColumnType("datetime2");
 
@@ -76,7 +82,7 @@ namespace tallerAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("VehicleId")
+                    b.Property<long?>("VehicleId")
                         .HasColumnType("bigint");
 
                     b.HasKey("IdStorie");
@@ -166,13 +172,11 @@ namespace tallerAPI.Migrations
 
             modelBuilder.Entity("tallerAPI.Data.Models.Storie", b =>
                 {
-                    b.HasOne("tallerAPI.Data.Models.Vehicle", "Id")
+                    b.HasOne("tallerAPI.Data.Models.Vehicle", "Vehicle")
                         .WithMany()
-                        .HasForeignKey("VehicleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("VehicleId");
 
-                    b.Navigation("Id");
+                    b.Navigation("Vehicle");
                 });
 
             modelBuilder.Entity("tallerAPI.Data.Models.User", b =>
