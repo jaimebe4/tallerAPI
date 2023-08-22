@@ -1,4 +1,5 @@
 ﻿using tallerAPI.Data.Models;
+using tallerAPI.Data.Dto;
 using tallerAPI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -20,7 +21,7 @@ namespace tallerAPI.Controllers
 
         [HttpPost]
         [Route("PostObtenerHistorias")]
-        public async Task<ActionResult<IEnumerable<Storie>>> PostObtenerHistorias()
+        public async Task<ActionResult<IEnumerable<StoriesDto>>> PostObtenerHistorias()
         {
 
             var storie = await _storieService.PostObtenerHistoriasAsync();

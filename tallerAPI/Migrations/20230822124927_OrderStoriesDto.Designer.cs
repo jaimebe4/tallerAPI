@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using tallerAPI.Data;
 
@@ -11,9 +12,11 @@ using tallerAPI.Data;
 namespace tallerAPI.Migrations
 {
     [DbContext(typeof(tallerDBContext))]
-    partial class tallerDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230822124927_OrderStoriesDto")]
+    partial class OrderStoriesDto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
